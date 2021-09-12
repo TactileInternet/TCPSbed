@@ -59,7 +59,7 @@ Follow the testbed component placement as in Demonstration-A. Edit the config fi
   - Right click the mouse to start the mouse control. Right click again to stop the mouse control
   - Use scroll wheel to change the direction and speed of the conveyor belt. 
 
-![tcpsOperaton](https://user-images.githubusercontent.com/48801729/75965935-89c7f880-5eef-11ea-896b-19dbf08212e5.png)
+![image](https://user-images.githubusercontent.com/48801729/132990919-218c91bb-8917-4153-b71c-e1fc6e96e676.png)
 
 # Publications
 [1] Kurian Polachan, T Venkata Prabhakar, Chandramani Singh, Fernando A. Kuipers, "Towards an Open Testbed for Tactile Cyber Physical Systems", 11th 11th International Conference on COMmunication Systems & NETworkS, COMSNETS 2019 at Bangalore, India.
