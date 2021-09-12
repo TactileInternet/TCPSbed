@@ -30,7 +30,7 @@ Python v2.7; mininet $sudo apt-get install mininet; ffmpeg, libav-tools $sudo ap
 # VREP Integration
 VREP is a simulator platform for robots. For demonstration of the testbed we need to install VREP. First, download VREP v3.6.0 from https://www.coppeliarobotics.com/downloads and extract it to a folder. Next, update the parameter 'vrep_path' in TCPSbed/runDirectory/config to correspond to the path of the executable 'vrep.sh'
 
-# Demonstration
+# Demonstration-A: Control of a Remote-Side Robot
 
 ## Testbed Component Placement (in Mininet)
 - ms-embsys-app-mouseController is run on ms-com
@@ -49,9 +49,17 @@ VREP is a simulator platform for robots. For demonstration of the testbed we nee
 
 ![tcpsOperaton](https://user-images.githubusercontent.com/48801729/75965935-89c7f880-5eef-11ea-896b-19dbf08212e5.png)
 
-## Direction and Speed Control of Conveyor Belt
+# Demonstration-B: Direction and Speed Control of a Remote-Side Conveyor Belt
 
+Follow the testbed component placement as in Demonstration-A. Edit the config file (TCPSbed/runDirectory/config) to replace the line "vrep_scene = "scenePhantomXGeneric.ttt" with "vrep_scene = "sceneConveyerBeltGeneric.ttt"
 
+- To run the testbed, go to the folder mininetScript and run the command $sudo python mininetScript.py
+- Wait for the xterm/windows ms-com, ss-com, srv, v-rep and ms-embsys-app-mouseController and ss-embsys-app-vrep to pop up
+- Now use the mouse to control the PhantomX robot simulated in VREP
+  - Right click the mouse to start the mouse control. Right click again to stop the mouse control
+  - Use scroll wheel to change the direction and speed of the conveyor belt. 
+
+![tcpsOperaton](https://user-images.githubusercontent.com/48801729/75965935-89c7f880-5eef-11ea-896b-19dbf08212e5.png)
 
 # Publications
 [1] Kurian Polachan, T Venkata Prabhakar, Chandramani Singh, Fernando A. Kuipers, "Towards an Open Testbed for Tactile Cyber Physical Systems", 11th 11th International Conference on COMmunication Systems & NETworkS, COMSNETS 2019 at Bangalore, India.
